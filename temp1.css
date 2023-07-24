@@ -1,0 +1,456 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body 
+{
+	overflow-x: hidden;
+	height: 100%;
+}
+.main 
+{
+	width: 100%;
+	height: 100vh;	
+}
+.head1
+{
+	background-color: #ee5253;
+	width: 100%;
+	height: 60px;
+	z-index: 10;
+}
+.sidebarmenu
+{
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 0px;
+	margin-top: 60px;
+	background-color: blue;
+	transform: translate(-250px);
+	transition: transform 250ms ease-in-out;
+}
+.opensidebarmenu:checked ~ .sidebarmenu
+{
+	transform: translate(0px);
+	width: 250px;
+}
+.menu 
+{
+	list-style-type: none;
+
+}
+.menu li 
+{
+	border-bottom: 1px solid black;
+}
+.menu li a 
+{
+	color: white;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px;
+}
+.sidebaricontoggle
+{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	z-index: 20;
+	top: 22px;
+	left: 15px;
+	cursor: pointer;
+}
+.spinner
+{
+	height: 3px;
+	background-color: white;
+	transition: all 0.3s;
+}
+.spinner.middle,
+.spinner.bottom 
+{
+	margin-top: 3px;
+}
+.opensidebarmenu:checked ~ .sidebaricontoggle > .spinner.middle
+{
+	opacity: 0px;
+}
+.opensidebarmenu:checked ~ .sidebaricontoggle > .spinner.top 
+{
+	transform: rotate(45deg);
+	margin-top: 8px;
+}
+.opensidebarmenu:checked ~ .sidebaricontoggle > .spinner.bottom
+{
+	transform: rotate(-45deg);
+	margin-top: -8px;
+
+}
+
+
+.imgbx
+{
+	width: 100%;
+	height: 100%;
+	background-image: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+.cont
+{ 	width: 100%;
+	height: 30%;
+	text-align: center;
+} 
+.cont h1
+{
+	font-family: sans-serif;
+	font-size: 6.5rem;
+	color: red;
+	padding-top: 150px;
+}
+.cont p 
+{
+	font-family: cursive;
+	font-size: 2rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.cont button
+{
+
+	width: 200px;
+	height: 50px;
+	background-color: lightgreen;
+	border: none;
+	border-radius: 50px;
+}
+.cont button h4
+{
+	color: black;
+}
+.second
+{
+	
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	
+	
+}
+.cont1
+{
+
+	width: 50%;
+	height: 100%;
+	text-align: left;
+	padding: 200px 200px;
+}
+.cont1 h4
+{
+	font-family: cursive;
+	font-size: 1.3rem;
+	padding-bottom: 20px;
+}
+.cont1 h1
+{
+	font-family: sans-serif;
+	font-weight: 750;
+	padding-bottom: 20px;
+}
+.cont1 p
+{
+	text-align: justify-all;
+	padding-bottom: 20px;
+}
+
+
+
+
+.img1
+{
+	width: 50%;
+	height: 100%;
+	padding: 100px 150px;
+}
+.imgbx1
+{
+	width: 100%;
+	height: 100%;
+	background-image: url(2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	clip-path: circle(50% at 50% 50%);
+
+}
+.cont1 button
+{
+
+	width: 200px;
+	height: 50px;
+	background-color: lightgreen;
+	border: none;
+	border-radius: 50px;
+}
+.cont1 button h3
+{
+	color: black;
+}
+
+.third
+{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	
+}
+.img2
+{
+	width: 50%;
+	height: 100%;
+	padding: 100px 150px;
+	
+
+}
+.imgbx2
+{
+	width: 100%;
+	height: 100%;
+	background-image: url(3.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	
+}
+.cont2
+{
+	width: 50%;
+	height: 100%;
+	text-align: left;
+	padding: 200px 200px;
+}
+
+.cont2 h4
+{
+	font-family: cursive;
+	font-size: 1.3rem;
+	padding-bottom: 20px;
+}
+.cont2 h1
+{
+	font-family: sans-serif;
+	font-weight: 750;
+	padding-bottom: 20px;
+}
+.cont2 p
+{
+	text-align: justify-all;
+	padding-bottom: 20px;
+}
+.cont2 button
+{
+
+	width: 200px;
+	height: 50px;
+	background-color: lightgreen;
+	border: none;
+	border-radius: 50px;
+}
+.cont2 button h3
+{
+	color: black;
+
+}
+.last
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url(4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: calc(100vh - 20vh);
+}
+.box 
+{
+	width: 80%;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+
+	
+}
+.box1
+{
+	width: 25%;
+	height: 100%;
+	background-color: #4682B4;
+	padding-top: 30px;
+	
+
+}
+.box1 .image 
+{
+	width: 100%;
+	height: 150px;
+	background-image: url(5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	clip-path: circle(31% at 50% 50%);
+	
+
+}
+.box1 .head
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+	padding: 20px 0px;
+	
+
+}
+.box1 .cont3
+{
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+	padding: 0px 40px;
+}
+.box2
+{
+	width: 25%;
+	height: 100%;
+	background-color:#32CD32;
+	padding-top: 30px;
+	
+
+}
+.box2 .image 
+{
+	width: 100%;
+	height: 150px;
+	background-image: url(6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	clip-path: circle(30% at 50% 50%);
+	
+
+}
+.box2 .head
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+	padding: 20px 0px;
+	
+
+}
+.box2 .cont3
+{
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+	padding: 0px 40px;
+}
+
+.box3
+{
+	width: 25%;
+	height: 100%;
+	background-color: red;
+	padding-top: 30px;
+	
+
+}
+.box3 .image 
+{
+	width: 100%;
+	height: 150px;
+	background-image: url(5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	clip-path: circle(32% at 50% 50%);
+	
+
+}
+.box3 .head
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+	padding: 20px 0px;
+	
+
+}
+.box3 .cont3
+{
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+	padding: 0px 40px;
+}
+.box4
+{
+	width: 25%;
+	height: 100%;
+	background-color: #E1BD3A;
+	padding-top: 30px;
+	
+
+}
+.box4 .image 
+{
+	width: 100%;
+	height: 150px;
+	background-image: url(5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	clip-path: circle(32% at 50% 50%);
+	
+
+}
+.box4 .head
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: white;
+	padding: 20px 0px;
+	
+
+}
+.box4 .cont3
+{
+	width: 100%;
+	height: auto;
+	color: white;
+	text-align: center;
+	padding: 0px 40px;
+}
+
+
+
+
+
+
+
